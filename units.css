@@ -1,0 +1,14 @@
+.box {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: lightgrey;
+}
+
+/* Different font sizes, which will define the elements’ em size */
+.box-small {
+    font-size: 12px;
+}
+
+.box-large {
+    font-size: 18px;
+}
