@@ -1,0 +1,42 @@
+/* Tag (or type) selector */
+h1 {
+    font-family: serif;
+    color: red;
+    margin-bottom: 10px; /* removes UA styles */
+}
+
+#main-nav {
+    /* removes UA styles */
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+#main-nav li {
+    display: inline-block; /* removes UA styles */
+}
+
+.nav a { /* change from #main-nav a -> .nav a (0,1,1) */
+    color: #fff;
+    background-color: #13a4a4; /* higher specificity, teal bkcolor */
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/* The orange background declaration won’t override the teal due to selector specificity. */
+a.featured { /* change from .featured -> a.featured (0,1,1) */
+    background-color: orange;
+}
+
+/* ID selector */
+#page-title {
+    font-family: sans-serif;
+    color: blue;
+}
+
+/* Class selector */
+.title {
+    font-family: monospace;
+    color: green;
+}
